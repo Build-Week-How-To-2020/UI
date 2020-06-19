@@ -155,7 +155,7 @@ h3 {
   font-size: 2.8rem;
 }
 p {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   line-height: 1.4;
 }
 .container {
@@ -279,24 +279,34 @@ footer {
   padding: 20px 0;
   display: flex;
 }
+.container {
+  padding: 100px;
+}
+.container .contact-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 50px;
+  flex-direction: column;
+}
+.container .contact-header h1 {
+  font-size: 5rem;
+}
+.container .contact-header .contact-header-content {
+  font: 1em sans-serif;
+  padding-top: 50px;
+}
 input[type=text],
 select,
 textarea {
   width: 100%;
-  /* Full width */
   padding: 12px;
-  /* Some padding */
   border: 1px solid #ccc;
-  /* Gray border */
   border-radius: 4px;
-  /* Rounded borders */
   box-sizing: border-box;
-  /* Make sure that padding and width stays in place */
   margin-top: 6px;
-  /* Add a top margin */
   margin-bottom: 16px;
-  /* Bottom margin */
-  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */;
+  resize: vertical;
 }
 input[type=submit] {
   background-color: #242582;
