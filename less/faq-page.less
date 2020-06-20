@@ -23,6 +23,7 @@ hr {
       margin-left: 25px;
       margin-right: 25px;
       padding: 10px;
+      border: 2px solid black;
       
       h2 {
         .flexbox;
@@ -35,6 +36,19 @@ hr {
         margin-bottom: 20px;
       }
     }
+    @media @phone {
+        .flexbox;
+        .centercenter;
+        flex-direction: column;
+        
+        .question1 {
+          height: 225px;
+        }
+        .titleContent {
+          margin-top: 20px;
+          margin-bottom: 20px;
+        }
+      }
   }
   
   hr {
