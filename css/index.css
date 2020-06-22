@@ -403,6 +403,10 @@ hr {
   transition: max-height 0.2s ease-out;
   background-color: lightgray;
 }
+.content li {
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
 .collapsible:after {
   content: '\02795';
   /* Unicode character for "plus" sign (+) */
