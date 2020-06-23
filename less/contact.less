@@ -1,0 +1,68 @@
+
+.container {
+    padding: 50px;
+    .contact-header {
+        .flexbox();
+        .centercenter();
+        padding-bottom: 50px;
+        flex-direction: column;
+        h1 {
+            font-size: 5rem;
+            @media @phone {
+                font-size: 10vw;
+            }
+        }
+        .contact-header-content {
+            font: 1em sans-serif;
+            padding-top: 50px;
+            font-size: 1.5rem;
+            @media @phone {
+                font-size: 1rem;
+            }
+        }
+    }
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical
+  }
+
+input[type=submit] {
+    background-color: #242582;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+input[type=submit]:hover {
+    background-color: #2f2fa2;
+  }
+
+  .social-media-icons {
+    padding: 20px;
+    font-size: 50px;
+    text-decoration: none;
+    padding-left: 50%;
+  }
+
+.fa-facebook-square {
+        color: @royal-blue;
+        &:hover {
+            opacity: 0.9;
+        }
+    }
+.fa-twitter-square {
+        color: @royal-blue;
+        &:hover {
+            opacity: 0.9;
+        }
+    }
