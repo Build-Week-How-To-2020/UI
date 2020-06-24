@@ -1,110 +1,157 @@
 hr {
-    max-width: 90%;
-    margin: 0 auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
+  max-width: 90%;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#container1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 95%;
+  margin: 0 auto;
+  margin-top: 10px;
+  background-color: #E3E2DF;
   
-  #container1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    max-width: 95%;
-    margin: 0 auto;
-    margin-top: 10px;
-    background-color: #E3E2DF;
-    
-    .title {
-      .flexbox;
-      .centercenter;
-      flex-direction: column;
-      max-width: 50%;
-      margin: 0 auto;
-      line-height: 1.5;
-    
-    .title h2{
-      text-align: center;
-      text-decoration: underline;
-      
-      .titleContent {
-        .flexbox;
-        .centercenter;
-      }
-    }
-    }
-    .icons1 {
-      .flexbox;
-      flex-direction: row;
-      justify-content: space-between;
-      max-width: 100%;
-      margin-top: 15px;
-      padding: 10px;
-      
-      .guides1 {
-        flex-wrap: wrap;
-        text-align: center;
-        margin: 0 auto;
-        margin-top: 10px;
-      }
-      
-    }
-    
-    .icons2 {
-      .flexbox;
-      flex-direction: row;
-      justify-content: space-evenly;
-      max-width: 100%;
-      margin-top: 20px;
-      padding: 10px;
-      
-    }
-    .guides2 {
-      flex-wrap: wrap;
-        text-align: center;
-        margin: 0 auto;
-        margin-top: 10px;
-    }
-  }
-  
-  .cat {
+  .title {
     .flexbox;
     .centercenter;
-    margin-bottom: 20px;
-    
-    h2 {
-      text-align: center;
-      margin-bottom: 15px;
-      background: #242582;
-      color: white;
-      max-width: 95%;
-      margin: 0 auto;
-      margin-bottom: 10px;
-    }
-    
-    p {
-      max-width: 70%;
-      margin: 0 auto;
-    }
-  }
-  
-  .content-row {
-    .flexbox;
-    max-width: 95%;
+    flex-direction: column;
+    max-width: 50%;
     margin: 0 auto;
     line-height: 1.5;
+  
+  .title h2{
+    text-align: center;
     
-    div {
-      margin: 20px;
-    }
-    
-    img {
-      border-radius: 15px;
-    }
-    
-    h3 {
-      background: #553D67;
-      text-align: center;
-      color: white;
-      margin-bottom: 10px;
+    .titleContent {
+      .flexbox;
+      .centercenter;
     }
   }
+  }
+  .icons1 {
+    .flexbox;
+    flex-direction: row;
+    justify-content: space-evenly;
+    max-width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+  }
+  
+  .guides1 {
+    flex-wrap: wrap;
+      text-align: center;
+      margin: 0 auto;
+      margin-top: 10px;
+  }
+  @media @phone {
+    justify-content: space-evenly;
+      flex-wrap: wrap;
+      margin: 0 auto;
+      
+      img {
+        max-width: 70%;
+      }
+      
+      .guides1 {
+        font-size: 1.25rem;
+      }
+  }
+
+  
+  .icons2 {
+    .flexbox;
+    flex-direction: row;
+    justify-content: space-evenly;
+    max-width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+  }
+  
+  .guides2 {
+    flex-wrap: wrap;
+      text-align: center;
+      margin: 0 auto;
+      margin-top: 10px;
+  }
+  @media @phone {
+    justify-content: space-evenly;
+      flex-wrap: wrap;
+      margin: 0 auto;
+      
+      img {
+        max-width: 70%;
+      }
+      
+      .guides2 {
+        font-size: 1.25rem;
+      }
+  }
+}
+
+
+.cat {
+  .flexbox;
+  .centercenter;
+  margin-bottom: 20px;
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 15px;
+    background: #242582;
+    color: white;
+    max-width: 95%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    max-width: 70%;
+    margin: 0 auto;
+  }
+  @media @phone {
+    flex-direction: column;
+    
+    h2 {
+      font-size: 2.5rem;
+      max-width: 90%;
+    }
+    p {
+      max-width: 80%;
+    }
+  }
+}
+
+.content-row {
+  .flexbox;
+  max-width: 95%;
+  margin: 0 auto;
+  line-height: 1.5;
+  
+  div {
+    margin: 10px;
+  }
+  
+  img {
+    border-radius: 15px;
+  }
+  
+  h3 {
+    background: #553D67;
+    text-align: center;
+    color: white;
+    margin-bottom: 10px;
+  }
+  @media @phone {
+    
+    div img {
+     width: 200px;
+    }
+    
+    div h3 {
+      font-size: 2rem;
+    }
+   }
+}

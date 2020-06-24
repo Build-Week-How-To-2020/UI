@@ -322,145 +322,100 @@ footer nav a:hover {
   }
 }
 hr {
-  max-width: 90%;
+  maz-width: 90%;
   margin: 0 auto;
-  margin-top: 20px;
-  margin-bottom: 20px;
 }
-#container1 {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  max-width: 95%;
-  margin: 0 auto;
-  margin-top: 10px;
-  background-color: #E3E2DF;
-}
-#container1 .title {
+.title {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
-  max-width: 50%;
-  margin: 0 auto;
-  line-height: 1.5;
-}
-#container1 .title .title h2 {
-  text-align: center;
-}
-#container1 .title .title h2 .titleContent {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-#container1 .icons1 {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  max-width: 100%;
-  margin-top: 20px;
-  padding: 10px;
-}
-#container1 .guides1 {
-  flex-wrap: wrap;
-  text-align: center;
-  margin: 0 auto;
-  margin-top: 10px;
-}
-@media (max-width: 500px) {
-  #container1 {
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    margin: 0 auto;
-  }
-  #container1 img {
-    max-width: 70%;
-  }
-  #container1 .guides1 {
-    font-size: 1.25rem;
-  }
-}
-#container1 .icons2 {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  max-width: 100%;
-  margin-top: 20px;
-  padding: 10px;
-}
-#container1 .guides2 {
-  flex-wrap: wrap;
-  text-align: center;
-  margin: 0 auto;
-  margin-top: 10px;
-}
-@media (max-width: 500px) {
-  #container1 {
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    margin: 0 auto;
-  }
-  #container1 img {
-    max-width: 70%;
-  }
-  #container1 .guides2 {
-    font-size: 1.25rem;
-  }
-}
-.cat {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 20px;
-}
-.cat h2 {
-  text-align: center;
-  margin-bottom: 15px;
-  background: #242582;
-  color: white;
   max-width: 95%;
   margin: 0 auto;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 }
-.cat p {
-  max-width: 70%;
-  margin: 0 auto;
-}
-@media (max-width: 500px) {
-  .cat {
-    flex-direction: column;
-  }
-  .cat h2 {
-    font-size: 2.5rem;
-    max-width: 90%;
-  }
-  .cat p {
-    max-width: 80%;
-  }
-}
-.content-row {
-  display: flex;
-  max-width: 95%;
-  margin: 0 auto;
-  line-height: 1.5;
-}
-.content-row div {
-  margin: 10px;
-}
-.content-row img {
+.title .question1 {
+  height: 250px;
   border-radius: 15px;
 }
-.content-row h3 {
-  background: #553D67;
-  text-align: center;
-  color: white;
-  margin-bottom: 10px;
+.title .titleContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  margin-left: 25px;
+  margin-right: 25px;
+  padding: 10px;
+  border: 2px solid black;
+}
+.title .titleContent h2 {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+.title .titleContent p {
+  margin-bottom: 20px;
 }
 @media (max-width: 500px) {
-  .content-row div img {
-    width: 200px;
+  .title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
   }
-  .content-row div h3 {
-    font-size: 2rem;
+  .title .question1 {
+    height: 225px;
   }
+  .title .titleContent {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+hr {
+  max-width: 90%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+.collapsible {
+  display: flex;
+  margin: 0 auto;
+  background-color: #553D67;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 95%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+.active,
+.collapsible:hover {
+  background-color: #99738E;
+}
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  max-width: 95%;
+  margin: 0 auto;
+  margin-bottom: 5px;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: lightgray;
+}
+.content li {
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+.collapsible:after {
+  content: '\02795';
+  /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: white;
+  float: right;
+  margin-left: 5px;
+}
+.active:after {
+  content: "\2796";
+  /* Unicode character for "minus" sign (-) */
 }
