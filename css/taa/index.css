@@ -508,6 +508,7 @@ input[type=submit]:hover {
 }
 .home .cta .cta-text {
   width: 50%;
+  padding-top: 20px;
 }
 @media (max-width: 500px) {
   .home .cta .cta-text {
@@ -516,6 +517,7 @@ input[type=submit]:hover {
 }
 .home .cta .cta-text h3 {
   margin-bottom: 10px;
+  padding-bottom: 30px;
 }
 .home .cta .cta-text p {
   margin-bottom: 26px;
