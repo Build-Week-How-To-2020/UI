@@ -356,6 +356,33 @@ hr {
 .title .titleContent p {
   margin-bottom: 20px;
 }
+.title .titleContent button {
+  background: linear-gradient(to bottom, #2F2FA2 5%, #242582 100%);
+  background-color: #2F2FA2;
+  border-radius: 5px;
+  border: 1px solid;
+  box-shadow: 10px 10px 8px #888888;
+  display: inline-block;
+  color: #ffffff;
+  font-size: 19px;
+  font-weight: bold;
+  padding: 12px 37px;
+}
+@media (max-width: 500px) {
+  .title .titleContent button {
+    display: flex;
+    justify-content: center;
+  }
+}
+.title .titleContent button a {
+  text-decoration: none;
+  color: #eee;
+}
+.title .titleContent button:hover {
+  background: linear-gradient(to bottom, #242582 5%, #2F2FA2 100%);
+  background-color: #242582;
+  box-shadow: unset;
+}
 @media (max-width: 500px) {
   .title {
     display: flex;
