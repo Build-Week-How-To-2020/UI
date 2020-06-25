@@ -35,6 +35,30 @@ hr {
       p {
         margin-bottom: 20px;
       }
+      button {
+        .button-bg(linear-gradient(to bottom, @cool-blue 5%, @royal-blue 100%), @cool-blue);
+                    border-radius:5px;
+                    border:1px solid;
+                    box-shadow: 10px 10px 8px #888888;
+                    display: inline-block;
+                    color:#ffffff;
+                    font-size:19px;
+                    font-weight:bold;
+                    padding:12px 37px;
+                    @media @phone {
+                    display: flex;
+                    justify-content: center;
+                  }
+                a {
+                    text-decoration: none;
+                    color: @off-white;
+                }
+                  &:hover {
+                    .button-bg(linear-gradient(to bottom, @royal-blue 5%, @cool-blue 100%), @royal-blue);
+                    box-shadow: unset;
+                }
+               
+            }
     }
     @media @phone {
       .flexbox;
