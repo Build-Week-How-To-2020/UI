@@ -419,3 +419,40 @@ hr {
   content: "\2796";
   /* Unicode character for "minus" sign (-) */
 }
+.signUp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 90%;
+  margin: 0 auto;
+  margin-top: 20px;
+  font-size: 3.5rem;
+}
+.signUp .btn {
+  background: linear-gradient(to bottom, #2F2FA2 5%, #242582 100%);
+  background-color: #2F2FA2;
+  border-radius: 5px;
+  border: 1px solid;
+  box-shadow: 10px 10px 8px #888888;
+  display: inline-block;
+  color: #ffffff;
+  font-size: 19px;
+  font-weight: bold;
+  padding: 12px 37px;
+}
+@media (max-width: 500px) {
+  .signUp .btn {
+    display: flex;
+    justify-content: center;
+  }
+}
+.signUp .btn a {
+  text-decoration: none;
+  color: #eee;
+}
+.signUp .btn:hover {
+  background: linear-gradient(to bottom, #242582 5%, #2F2FA2 100%);
+  background-color: #242582;
+  box-shadow: unset;
+}
