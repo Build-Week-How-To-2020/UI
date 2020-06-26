@@ -1,0 +1,93 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>QuickTricks</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="css/taa/index.css" rel="stylesheet">
+
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+ 
+</head>
+
+<body>
+
+    <div class="navigation" id="myTopnav">
+      <div class="navtitle">
+        <h1>QuickTricks</h1><h5>For Life</h5>
+      </div>
+      <nav>
+        
+        <div class="dropdown">
+          <button class="dropbtn">&#9776;
+          </button>
+          <div class="dropdown-content">
+            <a href="index.html">Home</a>
+            <a href="categories.html">Categories</a>
+            <a href="faq.html">FAQ</a>
+            <a href="contact.html">Contact</a>
+            <a href="careers.html">Careers</a>
+            <a href="https://frontend-opal-pi.vercel.app/login">Login</a>
+            <a href="https://frontend-opal-pi.vercel.app/signup">Sign Up</a>
+          </div>
+        </div>
+            <a href="index.html">Home</a>
+            <a href="categories.html">Categories</a>
+            <a href="faq.html">FAQ</a>
+            <a href="contact.html" class="active">Contact</a>
+            <a href="careers.html">Careers</a>
+            <a href="https://frontend-opal-pi.vercel.app/login">Login</a>
+            <a href="https://frontend-opal-pi.vercel.app/signup">Sign Up</a>
+      </nav>
+    </div>
+    <div class="container">
+        <div role="main" class="contact-header">
+            <h1>Contact Us</h1>
+            <div class="contact-header-content">
+                Please feel free to contact us regarding sign-up, usage, licensing, or support.  As always, we welcome your feedback!
+            </div>
+        </div>
+
+        <form>
+      
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your first name..">
+      
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      
+          <label for="country">Country</label>
+          <select id="country" name="country" role="listbox" aria-labelledby="listbox1label" aria-activedescendant="listbox1-1">
+            <option id="listbox1-1" class="selected" aria-selected="true" value="usa">USA</option>
+            <option id="listbox1-2" value="canada">Canada</option>
+            <option id="listbox1-3" value="australia">Australia</option>
+          </select>
+      
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      
+          <input type="submit" value="Submit" role="button">
+      
+        </form>
+        <div role="img" aria-label="Social Media Icons" class="social-media-icons">
+            <div class="fa">
+            <i class="fa fa-facebook-square" alt="facebook icon"></i>
+            <i class="fa fa-twitter-square" alt="twitter icon"></i>
+            </div>
+        </div>
+      </div>
+    <footer>
+        <p>Copyright QuickTricks <script type="text/javascript">
+            document.write(new Date().getFullYear());
+          </script></p>
+    </footer>
+    
+</body>
+</html>

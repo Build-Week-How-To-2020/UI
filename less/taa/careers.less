@@ -1,0 +1,223 @@
+.home {
+
+    .intro {
+      
+      padding-top: 10px;
+      @media @phone {
+        padding-top: 10px;
+      }
+      
+      img {
+        border-radius: 5px;
+        width: 100%;
+        height: 250px;
+        @media @phone {
+          width: 100%;
+          position: relative;
+        }
+      }
+  
+      h2 {
+        padding: 55px;
+      }
+  
+      p {
+        padding:0 15px;
+        padding-bottom: 50px;
+
+      }
+    
+    }
+    .about-images {
+        .flexbox();
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 50px;
+        @media @phone {
+            .flexbox();
+            flex-direction: column;
+            align-items: center;
+        }
+        img {
+            width: 50%;
+            margin: 20px 25%;
+            border-radius: 20px;
+        }
+        .top-row {
+            .flexbox();
+            flex-direction: row;
+            @media @phone {
+                .flexbox();
+                flex-direction: column;
+                width: 100%;
+            }
+            div{
+                width: 100%;
+                display: grid;
+            }
+            p{
+                .flexbox();
+                justify-content: center;
+            }
+            a{
+                text-decoration: none;
+                color: @royal-blue;
+                &:hover{
+                    color: @cool-blue;
+                    font-size: 2.5rem;
+                    transition: .5s;
+            
+                }
+            }
+        }
+        .bottom-row {
+            .flexbox();
+            flex-direction: row;
+            @media @phone {
+                .flexbox();
+                flex-direction: column;
+                width: 100%;
+            }
+            div{
+                width: 100%;
+                display: grid;
+            }
+            p{
+                .flexbox();
+                justify-content: center;
+            }
+            a{
+                text-decoration: none;
+                color: @royal-blue;
+                &:hover{
+                    color: @cool-blue;
+                    font-size: 2.5rem;
+                    transition: .5s;
+                }
+            }
+        }
+    
+    }
+    .diy-images {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      @media @phone {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      img {
+        width: 28%;
+        margin: 20px 2.5%;
+        border-radius: 20px;
+        height: 100%;
+      }
+      .diy1 {
+        @media @phone {
+        display: none;
+        }
+      }
+      .diy2 {
+        @media @phone {
+          display: none;
+        }
+      }
+      .diy3 {
+        @media @phone {
+          width: 90%;
+        }
+      }
+    }
+  
+    .simplify-diy {
+      padding: 15px;
+  
+      h3 {
+        margin-top: 11px;
+        padding: 35px;
+      }
+  
+      p {
+        margin-top: 13px;
+      }
+    }
+  
+    .cta {
+      @media @phone {
+        flex-direction: column-reverse;
+        margin-top: 30px;
+        padding: 20px;
+      }
+      margin-top: 60px;
+      border-top: 1px solid @main-border-color;
+      padding: 50px 60px;
+      display: flex;
+      justify-content: center;
+  
+      .cta-text {
+        width: 50%;
+        padding-top: 20px;
+        @media @phone {
+          width: 100%;
+        }
+  
+        h3 {
+          margin-bottom: 10px;
+          padding-bottom: 30px;
+        }
+  
+        p {
+          margin-bottom: 26px;
+        }
+        
+       .btn {
+        .button-bg(linear-gradient(to bottom, @cool-blue 5%, @royal-blue 100%), @cool-blue);
+            border-radius:5px;
+            border:1px solid;
+            box-shadow: 10px 10px 8px #888888;
+            display: inline-block;
+            color:#ffffff;
+            font-size:19px;
+            font-weight:bold;
+            padding:12px 37px;
+            @media @phone {
+            display: flex;
+            justify-content: center;
+          }
+        a {
+            text-decoration: none;
+            color: @off-white;
+        }
+          &:hover {
+            .button-bg(linear-gradient(to bottom, @royal-blue 5%, @cool-blue 100%), @royal-blue);
+            box-shadow: unset;
+        }
+       }
+      }
+  
+      .diy4 {
+        width: 46%;
+        margin-left: 4%;
+        @media @phone {
+          width: 100%;
+          margin-left: unset;
+        }
+        
+        img {
+          width: 100%;
+          height: auto;
+          border-radius: 10px;
+          @media @phone {
+            height: unset;
+            padding-bottom: 20px;
+          }
+        }
+      }
+    }
+  }
+  .jobs-list-dept-title {
+      font-size: 2rem;
+      line-height: 3rem;
+  }
