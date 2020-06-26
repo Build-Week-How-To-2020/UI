@@ -1,0 +1,120 @@
+.navigation{
+    .flexbox();
+    justify-content: space-between;
+    background-color: @nav-bg;
+    color: @nav-font;
+    width: 95%;
+    margin: 0 auto;
+    padding-bottom: 10px;
+    @media @phone {
+        position: unset;
+        justify-content: center;
+        flex-direction: row-reverse;
+    }
+   
+    .dropdown{
+        float: left;
+        overflow: hidden;
+
+        .dropbtn{
+            display: none;
+            @media @phone{
+            display: flex;
+            font-size: 2rem;
+            border: none;
+            outline: none;
+            color: @off-white;
+            font-weight: bolder;
+            padding: 10px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+            }
+        }
+    
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: @royal-blue;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            
+            a{
+            float: none;
+            color: @off-white;
+            font-weight: bolder;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+            &:hover{
+                color: @pastel-plum;
+            }
+        }
+        }
+        &:hover .dropdown-content{
+            display: block;
+        }
+    }
+
+    .navtitle{
+        .flexbox();
+        align-items: baseline;
+        font-size: 3rem;
+        padding: 10px;
+
+        h5 {
+            font-size: 1rem;
+            font-family: @sub-font;
+        }
+
+        
+    }
+
+    nav{
+        .flexbox();
+        .centercenter();
+        margin-right: 50px;
+        padding-top: 10px;
+        color: @nav-font;
+        
+        @media @phone {
+            margin-right: unset;
+            padding-top: unset;
+        }
+    }
+    .active {
+        color: @pastel-plum;
+    }
+        a{
+        	color: @nav-font;
+        	font-size: 1rem;
+        	margin-left: 20px;
+            transition: 0.5s;
+            text-decoration: none;
+            font-family: @mono-font;
+            &:hover {
+                font-size: 2rem;
+            }
+            @media @phone {
+                font-size: 1.5rem;
+                &:not(:first-child), .dropdown .dropbtn{
+                    display: none;
+                }
+            }
+            
+        }
+}
+
+.headerPic img {
+  display: flex;
+  justify-content: center;
+  width: 95%;
+  height: 300px;
+  margin: 0 auto;
+  Margin-top: 15px;
+  margin-bottom: 20px;
+  }
+
+  

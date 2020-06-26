@@ -1,0 +1,162 @@
+hr {
+    maz-width: 90%;
+    margin: 0 auto;
+  }
+  
+  .title {
+    .flexbox;
+    .centercenter;
+    max-width: 95%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    
+    .question1 {
+      height: 250px;
+      border-radius: 15px;
+    }
+    
+    .titleContent {
+      .flexbox;
+      flex-direction: column;
+      align-items: center;
+      margin: 0 auto;
+      margin-left: 25px;
+      margin-right: 25px;
+      padding: 10px;
+      border: 2px solid black;
+      
+      h2 {
+        .flexbox;
+        justify-content: center;
+        align-items: flex-start;
+        margin-bottom: 20px;
+      }
+      
+      p {
+        margin-bottom: 20px;
+      }
+      button {
+        .button-bg(linear-gradient(to bottom, @cool-blue 5%, @royal-blue 100%), @cool-blue);
+                    border-radius:5px;
+                    border:1px solid;
+                    box-shadow: 10px 10px 8px #888888;
+                    display: inline-block;
+                    color:#ffffff;
+                    font-size:19px;
+                    font-weight:bold;
+                    padding:12px 37px;
+                    @media @phone {
+                    display: flex;
+                    justify-content: center;
+                  }
+                a {
+                    text-decoration: none;
+                    color: @off-white;
+                }
+                  &:hover {
+                    .button-bg(linear-gradient(to bottom, @royal-blue 5%, @cool-blue 100%), @royal-blue);
+                    box-shadow: unset;
+                }
+               
+            }
+    }
+    @media @phone {
+      .flexbox;
+      .centercenter;
+      flex-direction: column;
+      
+      .question1 {
+        height: 225px;
+      }
+      .titleContent {
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+    }
+  }
+  
+  hr {
+    max-width: 90%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  
+  .collapsible {
+    display: flex;
+    margin: 0 auto;
+    background-color: #553D67;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 95%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+  }
+  
+  .active, .collapsible:hover {
+    background-color: #99738E;
+  }
+  
+  .content {
+    padding: 0 18px;
+    max-height: 0;
+    max-width: 95%;
+    margin: 0 auto;
+    margin-bottom: 5px;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: lightgray;
+    
+    li {
+      font-size: 1.5rem;
+      line-height: 1.5;
+    }
+  }
+  
+  .collapsible:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: white;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+  }
+
+  .signUp {
+    .flexbox;
+    .centercenter;
+    flex-direction: column;
+    max-width: 90%;
+    margin: 0 auto;
+    margin-top: 20px;
+    font-size: 3.5rem;
+    
+    .btn {
+          .button-bg(linear-gradient(to bottom, @cool-blue 5%, @royal-blue 100%), @cool-blue);
+              border-radius:5px;
+              border:1px solid;
+              box-shadow: 10px 10px 8px #888888;
+              display: inline-block;
+              color:#ffffff;
+              font-size:19px;
+              font-weight:bold;
+              padding:12px 37px;
+              @media @phone {
+              display: flex;
+              justify-content: center;
+            }
+          a {
+              text-decoration: none;
+              color: @off-white;
+          }
+            &:hover {
+              .button-bg(linear-gradient(to bottom, @royal-blue 5%, @cool-blue 100%), @royal-blue);
+              box-shadow: unset;
+          }
+         }
+        }
