@@ -48,7 +48,7 @@
       </nav>
     </div>
     <div class="container">
-        <div class="contact-header">
+        <div role="main" class="contact-header">
             <h1>Contact Us</h1>
             <div class="contact-header-content">
                 Please feel free to contact us regarding sign-up, usage, licensing, or support.  As always, we welcome your feedback!
@@ -64,22 +64,22 @@
           <input type="text" id="lname" name="lastname" placeholder="Your last name..">
       
           <label for="country">Country</label>
-          <select id="country" name="country">
-            <option value="usa">USA</option>
-            <option value="canada">Canada</option>
-            <option value="australia">Australia</option>
+          <select id="country" name="country" role="listbox" aria-labelledby="listbox1label" aria-activedescendant="listbox1-1">
+            <option id="listbox1-1" class="selected" aria-selected="true" value="usa">USA</option>
+            <option id="listbox1-2" value="canada">Canada</option>
+            <option id="listbox1-3" value="australia">Australia</option>
           </select>
       
           <label for="subject">Subject</label>
           <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
       
-          <input type="submit" value="Submit">
+          <input type="submit" value="Submit" role="button">
       
         </form>
-        <div class="social-media-icons">
+        <div role="img" aria-label="Social Media Icons" class="social-media-icons">
             <div class="fa">
-            <i class="fa fa-facebook-square" aria-hidden="true"></i>
-            <i class="fa fa-twitter-square" aria-hidden="true"></i>
+            <i class="fa fa-facebook-square" alt="facebook icon"></i>
+            <i class="fa fa-twitter-square" alt="twitter icon"></i>
             </div>
         </div>
       </div>
